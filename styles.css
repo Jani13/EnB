@@ -1,0 +1,199 @@
+/* universal */
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: "Garamond", sans-serif;
+    font-size: 6rem;
+}
+
+h2 {
+    font-family: "Garamond", sans-serif;
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+
+/* header */
+
+.topnav {
+    background-color: white;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.9;
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 16px 25px;
+    text-decoration: none;
+}
+/* anchor element does not cause a linke break */
+
+.topnav a.login {
+    background-color: black;
+    color: white;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+.topnav a.logo {
+    font-family: "Garamond", sans-serif;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 2.5rem;
+}
+
+.topnav {
+    font-size: 1.5rem;
+}
+
+/* body */
+
+.main {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+
+#intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40rem;
+    background-image: url("./resources/sean-pollock-PhYq704ffdA-unsplash.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img-text {
+    color: black;
+    padding: 2rem 5rem;
+    background-color: whitesmoke; 
+    opacity: 0.7;
+    text-align: center;
+}
+
+#img-text h1 {
+    margin: 0;
+}
+
+#img-text h2 {
+    margin: 0;
+    padding-top: 1.5rem;
+
+}
+
+#img-text p {
+    margin: 0;
+    padding-top: 1.5rem;
+    line-height: 1.6;
+}
+
+/* class */
+
+#class {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 10%;
+    background-color: none;
+    flex-wrap: wrap;
+}
+
+#class .container {
+    text-align: center;
+    margin: 1.5rem 2rem;
+    padding: 2rem;
+    background-color: #F3F3F3;
+    flex: 1; /* flex-grow - equals image sizes */
+}
+
+.container.img {
+    width: 90%; 
+    height: 60%;
+    margin: 0 auto;
+}
+
+/* profession */
+
+#profession {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5%;
+    background-color: #F3F3F3;
+}
+
+#type {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#type .container {
+    text-align: center;
+    margin: 0.5rem 1.5rem;
+    padding: 0.5rem;
+    background-color: white;
+    flex: 0.2rem;
+    min-width: 300px;
+}
+
+/* footer */
+
+#footer {
+    height: 12rem;
+    display: flex;
+    padding: 1.5rem 3rem 0.5rem 3rem;
+}
+
+#footer p {
+    font-size: 1.2rem;
+}
+
+#footer .content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    #footer .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer .content .contact {
+        text-align: center;
+    }
+}
