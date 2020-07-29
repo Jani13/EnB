@@ -1,1 +1,2 @@
 Codeacademy - Company Home Page Challenge Project (CSS, Flexbox)
+Built a responsive website of an imaginary language school teaching business English
